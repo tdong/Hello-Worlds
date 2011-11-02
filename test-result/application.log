@@ -1,0 +1,32 @@
+05 Oct 2011 01:39:52,603 INFO  ~ Starting /home/tdong/workspace/Hello Worlds
+05 Oct 2011 01:39:53,690 WARN  ~ You're running Play! in DEV mode
+05 Oct 2011 01:39:53,936 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+05 Oct 2011 01:40:07,797 ERROR ~ Unable to set localhost. This prevents creation of a GUID. Cause was: tdong.localdomain: tdong.localdomain
+java.net.UnknownHostException: tdong.localdomain: tdong.localdomain
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1426)
+	at net.sf.ehcache.Cache.<clinit>(Cache.java:155)
+	at net.sf.ehcache.config.ConfigurationHelper.createCache(ConfigurationHelper.java:298)
+	at net.sf.ehcache.config.ConfigurationHelper.createDefaultCache(ConfigurationHelper.java:214)
+	at net.sf.ehcache.CacheManager.configure(CacheManager.java:552)
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:323)
+	at net.sf.ehcache.CacheManager.<init>(CacheManager.java:279)
+	at net.sf.ehcache.CacheManager.create(CacheManager.java:641)
+	at play.cache.EhCacheImpl.<init>(EhCacheImpl.java:31)
+	at play.cache.EhCacheImpl.newInstance(EhCacheImpl.java:41)
+	at play.cache.Cache.init(Cache.java:241)
+	at play.Play.start(Play.java:491)
+	at play.Play.detectChanges(Play.java:610)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at play.server.PlayHandler$NettyInvocation.init(PlayHandler.java:168)
+	at play.Invoker$Invocation.run(Invoker.java:263)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:200)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:165)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:679)
+05 Oct 2011 01:40:09,564 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+05 Oct 2011 01:40:09,733 INFO  ~ Application 'Hello Worlds' is now started !
